@@ -1,0 +1,15 @@
+meta {
+  name: GET Course
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://127.0.0.1:8000/courses/{{courseId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  courseId: 677f07095490cb6a59f5290d
+}
